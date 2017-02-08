@@ -1,0 +1,6 @@
+framework module Pods_Canva_ChallengeTests {
+  umbrella header "Pods-Canva-ChallengeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

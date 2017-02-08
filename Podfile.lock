@@ -1,0 +1,25 @@
+PODS:
+  - HanekeSwift (0.10.1)
+  - KVNProgress (2.3.1)
+
+DEPENDENCIES:
+  - HanekeSwift (from `https://github.com/Haneke/HanekeSwift.git`, branch `feature/swift-3`)
+  - KVNProgress
+
+EXTERNAL SOURCES:
+  HanekeSwift:
+    :branch: feature/swift-3
+    :git: https://github.com/Haneke/HanekeSwift.git
+
+CHECKOUT OPTIONS:
+  HanekeSwift:
+    :commit: 1157a124ec699f4ad926cb054f1d0bfce88ae7a9
+    :git: https://github.com/Haneke/HanekeSwift.git
+
+SPEC CHECKSUMS:
+  HanekeSwift: 4113367892828e7700d24a384027de6ebc79aad1
+  KVNProgress: 8167b1f19e2758290c0b6143020ed9dcbb0477a1
+
+PODFILE CHECKSUM: 210f9a1bde1f6dab589f44c006f1e6ea33ca1405
+
+COCOAPODS: 1.2.0.beta.1

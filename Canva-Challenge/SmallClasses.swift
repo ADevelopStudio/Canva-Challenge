@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Haneke
 
 struct  MazeCellData {
     var id: String
@@ -36,9 +37,15 @@ class MazeCell: UICollectionViewCell {
     
     func fillWith(data: MazeCellData?)  {
         mazeImage.backgroundColor = (data == nil || data!.id.length == 0) ? .black : .white
-        if data == nil {
+        if data == nil || data!.image.length == 0 {
             mazeImage.image = nil
             return
+        }
+        if let url = URL(string: data!.image) {
+            mazeImage.hnk_setImageFromURL(url)
+//            Shared.imageCache.fetch(URL: url).onSuccess { image in
+//               self.mazeImage.image = image
+//            }
         }
         
     }

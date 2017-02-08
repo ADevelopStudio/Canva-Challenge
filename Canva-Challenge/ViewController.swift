@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import KVNProgress
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -21,9 +21,14 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return  matrix[section].count
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width / CGFloat(matrix[indexPath.section].count), height: collectionView.bounds.width / CGFloat(matrix.count))
+        let collectionWidth = UIScreen.main.bounds.width - 56
+        let width = collectionWidth / CGFloat(self.matrix[indexPath.section].count)
+        let height = collectionWidth / CGFloat(self.matrix.count)
+        return CGSize(width: width, height: height)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0.0
     }
@@ -31,41 +36,70 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         return 0.0
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: 0, height: 0)
+    }
+    
 
 }
 
 class ViewController: UIViewController {
     @IBOutlet weak var collection: UICollectionView!
+    @IBOutlet weak var generatingIndicator: AASquaresLoading!
 
     let mazeManager = MazeManager()
     var matrix = [[MazeCellData?]]()
     var roomsToDownload = Array<RoomToDownload>()
     var startTime: Double = 0
+
+    var isGeneratingInProgress = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collection.delegate = self
         collection.dataSource = self
+        collection.isScrollEnabled = false
+        collection.backgroundColor = .clear
     }
     
     
     
-    func generateEmptyArray()  {
+    func generateEmptyArray(size: Int)  {
         matrix = []
-        for _ in 0..<500 {
+        roomsToDownload = []
+        for _ in 0..<size {
             var arrayRow = [MazeCellData?]()
-            for _ in 0..<500 {
+            for _ in 0..<size {
                 arrayRow.append(nil)
             }
             matrix.append(arrayRow)
         }
-
     }
     
+    
     @IBAction func genaratePressed(_ sender: Any) {
-        generateEmptyArray()
+        if isGeneratingInProgress {
+            let sheet = UIAlertController(title: "Maze generation in progress.", message: "Do you want to stop it?", preferredStyle: .alert)
+            sheet.addAction(UIAlertAction(title: "Stop", style: .destructive, handler: { _ in
+                self.generatingIndicator.isHidden = true
+                self.isGeneratingInProgress = false
+            }))
+            sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            self.present(sheet, animated: true, completion: nil)
+            
+        } else {
+            startGeneratingMaze()
+        }
+    }
+    
+    
+    func startGeneratingMaze() {
+        isGeneratingInProgress = true
+        generatingIndicator.isHidden = false
+        generateEmptyArray(size: 500)
+        collection.isHidden = true
         startTime = Date().timeIntervalSince1970
-        startPoint(completion: {
+        openFirstRoom(completion: {
             success, roomId in
             if success {
                 self.roomsToDownload.append(RoomToDownload(id: roomId, positionX: 250, positionY: 250, needToUnlock: false))
@@ -75,10 +109,9 @@ class ViewController: UIViewController {
             }
         })
     }
- 
+     
     
-    
-    func startPoint(completion: @escaping ( _ success: Bool, _ roomId: String) -> ())  {
+    func openFirstRoom(completion: @escaping ( _ success: Bool, _ roomId: String) -> ())  {
         mazeManager.fetchStartRoom(callback: {
             result in
             if result.1 != nil {
@@ -114,6 +147,12 @@ class ViewController: UIViewController {
     
     
     func openNextRoom() {
+        if !self.isGeneratingInProgress { //WAS Stoped by user
+            DispatchQueue.main.async(){
+                KVNProgress.showError(withStatus: "Canceled")
+            }
+            return
+        }
 //        print("NEXT room!")
         if self.roomsToDownload.count > 0 {
             let newRoom = self.roomsToDownload.remove(at: 0)
@@ -122,7 +161,11 @@ class ViewController: UIViewController {
             print("All rooms were open in total time: \(Date().timeIntervalSince1970 - startTime) sec")
             matrix =  matrix.cutEmptyData()
             matrix.debugPrint()
+            self.isGeneratingInProgress = false
             DispatchQueue.main.async(){
+                KVNProgress.showSuccess(withStatus: "All rooms were open in total time: \(Int(Date().timeIntervalSince1970 - self.startTime)) sec")
+                self.generatingIndicator.isHidden = true
+                self.collection.isHidden = false
                 self.collection.reloadData()
             }
         }

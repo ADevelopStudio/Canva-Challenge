@@ -1,0 +1,1163 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048BE8B1399E22885B758F58B5103AAF /* UIImage+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D7F7C979C02D291C8DBC3B1999AC23 /* UIImage+Haneke.swift */; };
+		0DA289E3CFC0496E8A393A78831458C6 /* Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F336C00592E59C8F14A08ED0D2F1E /* Fetch.swift */; };
+		176989015A543276704F966B3FC0E67F /* UIImage+KVNEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5462B846CC52FEEFEA08C4930048113C /* UIImage+KVNEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2103757FE9BA3FEF83B88C3897D1605B /* Pods-Canva-Challenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51AEB0032E1616FD05C13C129C6C52A2 /* Pods-Canva-Challenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		233D0C74026D4F77CB562E90B2714777 /* DiskFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABABF52D2F2414292C7C9F9A7F89AC /* DiskFetcher.swift */; };
+		25F558B3167CC7FAFCCC902B83ED0599 /* String+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5AC01BAFEF1434DB3431617AD7A73 /* String+Haneke.swift */; };
+		2D93F149491F25BCC11EBF259DE1791D /* NSURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5EDF23A9EDD7FD02C6D3A1DA0CA6E /* NSURLResponse+Haneke.swift */; };
+		34BA8F11703FC6F1FC94812A2B451A2D /* HanekeSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEDBBC8BE85DED2CE0502376D82FAF4 /* HanekeSwift-dummy.m */; };
+		368FBAAE5E624FDDB6F39D1ACB1DA144 /* UIImageView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8F2B40ED69D2ECB7919640637DDB01 /* UIImageView+Haneke.swift */; };
+		424F2EE8F3FF0206A8C0455939698D41 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FCFB0B635C29CCF6AE2B98ADF8EFF4 /* Fetcher.swift */; };
+		44ACFD0543993523C7B2875814A25A65 /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E62FAA62E8C97DA13F5564CBDAA3EF1 /* DiskCache.swift */; };
+		45D941F68F765620760E8EC56F4C3904 /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB2E7B6972CA4CE451454EC5E00737F /* NetworkFetcher.swift */; };
+		4B211E4079D32A859EBE82470B96D28C /* Pods-Canva-ChallengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04882940F42CE98B02C0088AB5A68084 /* Pods-Canva-ChallengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		516B284EC38BCC14EBF5A275790CFA9E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD47E501AB669159110A83F93D827DE /* Data.swift */; };
+		5946A4834D77660F3D8188ED70FDC603 /* NSHTTPURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A03ABB2ECA6E63305B195EEEDE0DF0 /* NSHTTPURLResponse+Haneke.swift */; };
+		61B16CE8BEF825B29F79AD73A89147E9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F97CDD09FA57FE7AA4A0C91DAC42EA /* GLKit.framework */; };
+		623E86F907ACAF05C7D5F437F5189F9B /* UIColor+KVNContrast.h in Headers */ = {isa = PBXBuildFile; fileRef = 0117D49E20B01C069CBE56B5DDA09DD3 /* UIColor+KVNContrast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6699DCBFA891A61E170F6731CBCADA5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */; };
+		6E4A6A8F4FD1C5562A564E0F79476870 /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8CC3A269AF5D99A1C2E3281EB4258A6 /* KVNProgressView.xib */; };
+		6F015CE6EB028FCAEC34271AB1417685 /* UIColor+KVNContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = 584B66BD332C44794FFDCAB258BC83FF /* UIColor+KVNContrast.m */; };
+		6F41805C2984D3172CEBDCB232A9E205 /* CryptoSwiftMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C655AE519C12DA15AC5089960B604E2 /* CryptoSwiftMD5.swift */; };
+		734D2D7728F4FDB196AFBDA6FE131376 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDB89B93C3088CF6D5111DE0076B755 /* Log.swift */; };
+		7E867974234ECCA3F0419879A37EF9A1 /* Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26BFB65C84E0923BA7AAB4F05BABC3 /* Haneke.swift */; };
+		834A6F9153967FAD2757C33ED34A291C /* Pods-Canva-Challenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 553578C2EE684D6482796B535435A665 /* Pods-Canva-Challenge-dummy.m */; };
+		8865405EBAE1226B5DC11EF3220A9DD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */; };
+		8F1B196C1FDE2A7D5ECC314CD998954E /* Pods-Canva-ChallengeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3E3E9F1CF133B7FB27C003435C9311 /* Pods-Canva-ChallengeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		912E9BC052D9ED36E9A586C2F9B1A954 /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C54F84A5DA482DE4A13686FBF5A3C36D /* UIImage+KVNImageEffects.m */; };
+		9C570987FA4FF102737BFF8350BB7BB8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B38C833D724C92FE336D7150D1DAC3 /* QuartzCore.framework */; };
+		9D751AE797836951F9FD0A4E9E6AE344 /* CGSize+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A6A4933DFA25878834B6EB53925D9 /* CGSize+Swift.swift */; };
+		9F0ED20EDA02495C3CE53351168BDA34 /* UIView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B9811A02ED0C9A6A3DDBA26FACDD5D /* UIView+Haneke.swift */; };
+		A257C7E3394A9813188DC886B978193F /* UIButton+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B769203704FFACD430090222DC6971 /* UIButton+Haneke.swift */; };
+		A629494D51BA1413529697B107DC0E3E /* Pods-Canva-ChallengeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 611E5F23EC946AD8A08D14BABEDC9A42 /* Pods-Canva-ChallengeUITests-dummy.m */; };
+		A9D13F93EECB898FD9136234180D3875 /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 43650A99625D207E22DF75A913F45510 /* KVNProgress.m */; };
+		ACEADB61E63EFE271357113BEA9EABDA /* Pods-Canva-ChallengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0969DF19DA214804E7B6360EEBB794A /* Pods-Canva-ChallengeTests-dummy.m */; };
+		AF1813E6ABD7EBF8D2361B9ACE72A894 /* KVNProgressConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 33DBEBCA42A0B49D5831A0800072815E /* KVNProgressConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5EA31C1EB80BB5C74E4A258F5A3E15F /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA557DAD11B7DAFDCFB82940D7AC29E /* UIImage+KVNEmpty.m */; };
+		C9FDF6F209E90829A8E96B03077116BB /* NSFileManager+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = E514656B1E5676431073CD0D062F3B32 /* NSFileManager+Haneke.swift */; };
+		D734F5980CF4609635307AEE7ECB65B2 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF536E54EB785B82DFE1384EE38E7BE /* Cache.swift */; };
+		D7DC140F63B94AE2752473BA5A1036B3 /* KVNRotationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ABD8E183A02C18FF9F172785A06C531 /* KVNRotationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB07461A48A7A8DCDC654FB8BD8EC45A /* KVNProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D423D3A4EC0E2000C089B44FF79038 /* KVNProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBBAF38295285B3BAD4E81DD502A14B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */; };
+		DC6457AF762D0DDF0C07EDD06FD84141 /* KVNProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE444D0AA3593DEC7C81C29B6BFA683 /* KVNProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E446E59C1EB3112CB388D3DFAFE39E6A /* KVNProgressConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C54400C88B09CAC9A50CB77C6421F72D /* KVNProgressConfiguration.m */; };
+		F0EBDEE66ECE575E113AC43F8CC67642 /* KVNRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47E2A55CDF80E82561A104790CE69CA /* KVNRotationViewController.m */; };
+		F211DBF02AD9CCDECA9BD1C3F58CD42E /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE16DCF238504009105AC9414848FBB /* Format.swift */; };
+		F9442C6A9F850C5B55F35A98C0EA4BDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */; };
+		F9C156883B938B995522ECC76E4A65DD /* HanekeSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23E4433F5C3563A887BB5C9E2CDDBA76 /* HanekeSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE4EEE0FCE73866E32FF1E053082C0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */; };
+		FC7FAFE4E22D440B924E271ADFD180FC /* KVNProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 958E5E786A466507D3F3C466B72A7831 /* KVNProgress-dummy.m */; };
+		FD50B44A26DC8DFD895382DC0FB61AA9 /* UIImage+KVNImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED856447E502470532E0E318FCE476F /* UIImage+KVNImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FF3671440E1EC82D0BD2D78BF76FA20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC71F9CD5545E32178492A81594B457;
+			remoteInfo = KVNProgress;
+		};
+		90636245E02F97F8F58FEBB11FE03101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE4759774042D8E013517E82C6F7A058;
+			remoteInfo = HanekeSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A8400BC12FC2F78AFD7F8DD3092717 /* Pods-Canva-ChallengeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Canva-ChallengeUITests-resources.sh"; sourceTree = "<group>"; };
+		0117D49E20B01C069CBE56B5DDA09DD3 /* UIColor+KVNContrast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+KVNContrast.h"; path = "KVNProgress/Categories/UIColor+KVNContrast.h"; sourceTree = "<group>"; };
+		04882940F42CE98B02C0088AB5A68084 /* Pods-Canva-ChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Canva-ChallengeTests-umbrella.h"; sourceTree = "<group>"; };
+		08973B4E88E041F74D1A11C01E3AEAE1 /* KVNProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KVNProgress.framework; path = KVNProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BF536E54EB785B82DFE1384EE38E7BE /* Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cache.swift; path = Haneke/Cache.swift; sourceTree = "<group>"; };
+		14D423D3A4EC0E2000C089B44FF79038 /* KVNProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVNProgress-umbrella.h"; sourceTree = "<group>"; };
+		16B769203704FFACD430090222DC6971 /* UIButton+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Haneke.swift"; path = "Haneke/UIButton+Haneke.swift"; sourceTree = "<group>"; };
+		18FCFB0B635C29CCF6AE2B98ADF8EFF4 /* Fetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fetcher.swift; path = Haneke/Fetcher.swift; sourceTree = "<group>"; };
+		1BD47E501AB669159110A83F93D827DE /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Haneke/Data.swift; sourceTree = "<group>"; };
+		1BE32C42182725B2DBADB10360730CF0 /* Pods-Canva-ChallengeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Canva-ChallengeTests-resources.sh"; sourceTree = "<group>"; };
+		1ED856447E502470532E0E318FCE476F /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNImageEffects.h"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
+		2041FF83656DACB42E2BFC8F43FFEA25 /* Pods_Canva_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Canva_ChallengeTests.framework; path = "Pods-Canva-ChallengeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F97CDD09FA57FE7AA4A0C91DAC42EA /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		23D7F7C979C02D291C8DBC3B1999AC23 /* UIImage+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Haneke.swift"; path = "Haneke/UIImage+Haneke.swift"; sourceTree = "<group>"; };
+		23E4433F5C3563A887BB5C9E2CDDBA76 /* HanekeSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HanekeSwift-umbrella.h"; sourceTree = "<group>"; };
+		33DBEBCA42A0B49D5831A0800072815E /* KVNProgressConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgressConfiguration.h; path = KVNProgress/Classes/KVNProgressConfiguration.h; sourceTree = "<group>"; };
+		369B7CDED73ED74CF1ADB08582B737FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E62FAA62E8C97DA13F5564CBDAA3EF1 /* DiskCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskCache.swift; path = Haneke/DiskCache.swift; sourceTree = "<group>"; };
+		40E2EF66F06E5EA2611E90BFCD3359AA /* Pods-Canva-ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Canva-ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4158036A6AC2318DB87AC5F28676656A /* HanekeSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HanekeSwift.modulemap; sourceTree = "<group>"; };
+		43650A99625D207E22DF75A913F45510 /* KVNProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgress.m; path = KVNProgress/Classes/KVNProgress.m; sourceTree = "<group>"; };
+		497D72655824099BB11F367E7FC08A7B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FF0AFDDCBB2F6D88E524A91074E69AB /* Pods-Canva-Challenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Canva-Challenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		502C8B0D563139FDC99DB87EB93ABB6F /* Pods-Canva-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Canva-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		51AEB0032E1616FD05C13C129C6C52A2 /* Pods-Canva-Challenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Canva-Challenge-umbrella.h"; sourceTree = "<group>"; };
+		52B38C833D724C92FE336D7150D1DAC3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		5462B846CC52FEEFEA08C4930048113C /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNEmpty.h"; path = "KVNProgress/Categories/UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
+		54ABABF52D2F2414292C7C9F9A7F89AC /* DiskFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskFetcher.swift; path = Haneke/DiskFetcher.swift; sourceTree = "<group>"; };
+		553578C2EE684D6482796B535435A665 /* Pods-Canva-Challenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Canva-Challenge-dummy.m"; sourceTree = "<group>"; };
+		56DCE1FB2951AB8ED555A6D2BEADD7F8 /* Pods-Canva-ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Canva-ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		584B66BD332C44794FFDCAB258BC83FF /* UIColor+KVNContrast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+KVNContrast.m"; path = "KVNProgress/Categories/UIColor+KVNContrast.m"; sourceTree = "<group>"; };
+		58A03ABB2ECA6E63305B195EEEDE0DF0 /* NSHTTPURLResponse+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSHTTPURLResponse+Haneke.swift"; path = "Haneke/NSHTTPURLResponse+Haneke.swift"; sourceTree = "<group>"; };
+		5FE444D0AA3593DEC7C81C29B6BFA683 /* KVNProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgress.h; path = KVNProgress/Classes/KVNProgress.h; sourceTree = "<group>"; };
+		611E5F23EC946AD8A08D14BABEDC9A42 /* Pods-Canva-ChallengeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Canva-ChallengeUITests-dummy.m"; sourceTree = "<group>"; };
+		695028318FCDBB9951F82BECB9E443B6 /* Pods-Canva-ChallengeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Canva-ChallengeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6AA52B25DB40F71622F9F0C244CDC5BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CC81BDF8D141965C61CF9BBDA6ED794 /* HanekeSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HanekeSwift-prefix.pch"; sourceTree = "<group>"; };
+		6CE113366118E04E14CB5B8631B68928 /* Pods_Canva_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Canva_Challenge.framework; path = "Pods-Canva-Challenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF26296ABC6CA504773D6E3E1C529AF /* Pods-Canva-Challenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Canva-Challenge-frameworks.sh"; sourceTree = "<group>"; };
+		793E8A55D2BDCCD5E3F767206545BC0B /* Pods-Canva-ChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Canva-ChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C655AE519C12DA15AC5089960B604E2 /* CryptoSwiftMD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoSwiftMD5.swift; path = Haneke/CryptoSwiftMD5.swift; sourceTree = "<group>"; };
+		7E5F336C00592E59C8F14A08ED0D2F1E /* Fetch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fetch.swift; path = Haneke/Fetch.swift; sourceTree = "<group>"; };
+		83243957064F638A4561F00E932FB031 /* Pods-Canva-Challenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Canva-Challenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		872C8BC77E113B1EABBD75A21F993DFC /* Pods-Canva-ChallengeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Canva-ChallengeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		875AAC996CD1F0C7E2AAA1A39CAF9C55 /* Haneke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Haneke.framework; path = HanekeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ABD8E183A02C18FF9F172785A06C531 /* KVNRotationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNRotationViewController.h; path = KVNProgress/Classes/KVNRotationViewController.h; sourceTree = "<group>"; };
+		8C727AB860B7D729365D58E214F1D518 /* KVNProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KVNProgress.modulemap; sourceTree = "<group>"; };
+		8F5B03156BB2A568EC5B97BCBF92903A /* Pods-Canva-ChallengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Canva-ChallengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8FB2E7B6972CA4CE451454EC5E00737F /* NetworkFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkFetcher.swift; path = Haneke/NetworkFetcher.swift; sourceTree = "<group>"; };
+		8FDB89B93C3088CF6D5111DE0076B755 /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Haneke/Log.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		956EF190FADB27B73F6A6FA86D2528F3 /* Pods-Canva-ChallengeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Canva-ChallengeUITests.modulemap"; sourceTree = "<group>"; };
+		958E5E786A466507D3F3C466B72A7831 /* KVNProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVNProgress-dummy.m"; sourceTree = "<group>"; };
+		9B8F2B40ED69D2ECB7919640637DDB01 /* UIImageView+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Haneke.swift"; path = "Haneke/UIImageView+Haneke.swift"; sourceTree = "<group>"; };
+		9D00C886A3BEBE7D7140E42D5AF29220 /* Pods-Canva-Challenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Canva-Challenge-resources.sh"; sourceTree = "<group>"; };
+		9EEDBBC8BE85DED2CE0502376D82FAF4 /* HanekeSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HanekeSwift-dummy.m"; sourceTree = "<group>"; };
+		9FD9DAA37EC150D63862506A348F781C /* Pods-Canva-ChallengeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Canva-ChallengeTests-frameworks.sh"; sourceTree = "<group>"; };
+		A04A6A4933DFA25878834B6EB53925D9 /* CGSize+Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGSize+Swift.swift"; path = "Haneke/CGSize+Swift.swift"; sourceTree = "<group>"; };
+		A0969DF19DA214804E7B6360EEBB794A /* Pods-Canva-ChallengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Canva-ChallengeTests-dummy.m"; sourceTree = "<group>"; };
+		A164978EBEE6C3F3B2955FE6218940BC /* Pods-Canva-Challenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Canva-Challenge.modulemap"; sourceTree = "<group>"; };
+		A413CF9C86FB16AEFEE95551E16F2810 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF752DC5463E51BDD77D8765B4682A2C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B72ABC76916B8248918FCD8CB3E48A /* KVNProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVNProgress-prefix.pch"; sourceTree = "<group>"; };
+		BDBA836F97EE73336C5F67BCBDBE16E0 /* Pods-Canva-ChallengeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Canva-ChallengeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BEE16DCF238504009105AC9414848FBB /* Format.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Format.swift; path = Haneke/Format.swift; sourceTree = "<group>"; };
+		C47E2A55CDF80E82561A104790CE69CA /* KVNRotationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNRotationViewController.m; path = KVNProgress/Classes/KVNRotationViewController.m; sourceTree = "<group>"; };
+		C54400C88B09CAC9A50CB77C6421F72D /* KVNProgressConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgressConfiguration.m; path = KVNProgress/Classes/KVNProgressConfiguration.m; sourceTree = "<group>"; };
+		C54F84A5DA482DE4A13686FBF5A3C36D /* UIImage+KVNImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNImageEffects.m"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.m"; sourceTree = "<group>"; };
+		C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEA5EDF23A9EDD7FD02C6D3A1DA0CA6E /* NSURLResponse+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLResponse+Haneke.swift"; path = "Haneke/NSURLResponse+Haneke.swift"; sourceTree = "<group>"; };
+		D46107B61A502DD2746372D7805587AA /* Pods-Canva-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Canva-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		DAED395B51F2FE7109C015C449074F2F /* KVNProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVNProgress.xcconfig; sourceTree = "<group>"; };
+		DBD5AC01BAFEF1434DB3431617AD7A73 /* String+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Haneke.swift"; path = "Haneke/String+Haneke.swift"; sourceTree = "<group>"; };
+		E3B9811A02ED0C9A6A3DDBA26FACDD5D /* UIView+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Haneke.swift"; path = "Haneke/UIView+Haneke.swift"; sourceTree = "<group>"; };
+		E514656B1E5676431073CD0D062F3B32 /* NSFileManager+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSFileManager+Haneke.swift"; path = "Haneke/NSFileManager+Haneke.swift"; sourceTree = "<group>"; };
+		E7130BA1BFEC8F3A22B7CCD708409AC1 /* HanekeSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HanekeSwift.xcconfig; sourceTree = "<group>"; };
+		ED3E3E9F1CF133B7FB27C003435C9311 /* Pods-Canva-ChallengeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Canva-ChallengeUITests-umbrella.h"; sourceTree = "<group>"; };
+		F0727D014FDD135C95C93EA794E91F63 /* Pods-Canva-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Canva-Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		F4F94553446DC3353B90E529D7BC7982 /* Pods-Canva-ChallengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Canva-ChallengeTests.modulemap"; sourceTree = "<group>"; };
+		F8CC3A269AF5D99A1C2E3281EB4258A6 /* KVNProgressView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KVNProgressView.xib; path = KVNProgress/Resources/KVNProgressView.xib; sourceTree = "<group>"; };
+		FAA557DAD11B7DAFDCFB82940D7AC29E /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNEmpty.m"; path = "KVNProgress/Categories/UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
+		FC28979FB305A50CCC727B769704C902 /* Pods_Canva_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Canva_ChallengeUITests.framework; path = "Pods-Canva-ChallengeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC585410C4877FEEE2B8162B03089842 /* Pods-Canva-ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Canva-ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD26BFB65C84E0923BA7AAB4F05BABC3 /* Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haneke.swift; path = Haneke/Haneke.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		485E10C678BCA805118F3F0FA0EBF124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6699DCBFA891A61E170F6731CBCADA5C /* Foundation.framework in Frameworks */,
+				61B16CE8BEF825B29F79AD73A89147E9 /* GLKit.framework in Frameworks */,
+				9C570987FA4FF102737BFF8350BB7BB8 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DBC390D4CA8A71B8B3F2F71F02B9C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9442C6A9F850C5B55F35A98C0EA4BDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9638DCC291B17FC51CF359D4B27A7015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8865405EBAE1226B5DC11EF3220A9DD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A80F6FF9D0DA26DE399DAD11B0AD88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE4EEE0FCE73866E32FF1E053082C0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AE8F3FCB72C7CD63ADDAF4C3227F08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBAF38295285B3BAD4E81DD502A14B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		017F597510368315863CE9D3B650225D /* KVNProgress */ = {
+			isa = PBXGroup;
+			children = (
+				5FE444D0AA3593DEC7C81C29B6BFA683 /* KVNProgress.h */,
+				43650A99625D207E22DF75A913F45510 /* KVNProgress.m */,
+				33DBEBCA42A0B49D5831A0800072815E /* KVNProgressConfiguration.h */,
+				C54400C88B09CAC9A50CB77C6421F72D /* KVNProgressConfiguration.m */,
+				8ABD8E183A02C18FF9F172785A06C531 /* KVNRotationViewController.h */,
+				C47E2A55CDF80E82561A104790CE69CA /* KVNRotationViewController.m */,
+				0117D49E20B01C069CBE56B5DDA09DD3 /* UIColor+KVNContrast.h */,
+				584B66BD332C44794FFDCAB258BC83FF /* UIColor+KVNContrast.m */,
+				5462B846CC52FEEFEA08C4930048113C /* UIImage+KVNEmpty.h */,
+				FAA557DAD11B7DAFDCFB82940D7AC29E /* UIImage+KVNEmpty.m */,
+				1ED856447E502470532E0E318FCE476F /* UIImage+KVNImageEffects.h */,
+				C54F84A5DA482DE4A13686FBF5A3C36D /* UIImage+KVNImageEffects.m */,
+				54941104FFAF9CC050F6D882BB91FE91 /* Resources */,
+				85B470ABF4D5A7ECDFB3DCDDC5E5E304 /* Support Files */,
+			);
+			name = KVNProgress;
+			path = KVNProgress;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF62A72BFFBB645BC76639BC1DEB7DB4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45CFBC5602C656D28EA69EAF530BBF83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				875AAC996CD1F0C7E2AAA1A39CAF9C55 /* Haneke.framework */,
+				08973B4E88E041F74D1A11C01E3AEAE1 /* KVNProgress.framework */,
+				6CE113366118E04E14CB5B8631B68928 /* Pods_Canva_Challenge.framework */,
+				2041FF83656DACB42E2BFC8F43FFEA25 /* Pods_Canva_ChallengeTests.framework */,
+				FC28979FB305A50CCC727B769704C902 /* Pods_Canva_ChallengeUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54941104FFAF9CC050F6D882BB91FE91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8CC3A269AF5D99A1C2E3281EB4258A6 /* KVNProgressView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5C395F44C0F3B320D50734FD414FD503 /* Pods-Canva-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				A413CF9C86FB16AEFEE95551E16F2810 /* Info.plist */,
+				A164978EBEE6C3F3B2955FE6218940BC /* Pods-Canva-Challenge.modulemap */,
+				83243957064F638A4561F00E932FB031 /* Pods-Canva-Challenge-acknowledgements.markdown */,
+				4FF0AFDDCBB2F6D88E524A91074E69AB /* Pods-Canva-Challenge-acknowledgements.plist */,
+				553578C2EE684D6482796B535435A665 /* Pods-Canva-Challenge-dummy.m */,
+				6CF26296ABC6CA504773D6E3E1C529AF /* Pods-Canva-Challenge-frameworks.sh */,
+				9D00C886A3BEBE7D7140E42D5AF29220 /* Pods-Canva-Challenge-resources.sh */,
+				51AEB0032E1616FD05C13C129C6C52A2 /* Pods-Canva-Challenge-umbrella.h */,
+				D46107B61A502DD2746372D7805587AA /* Pods-Canva-Challenge.debug.xcconfig */,
+				F0727D014FDD135C95C93EA794E91F63 /* Pods-Canva-Challenge.release.xcconfig */,
+			);
+			name = "Pods-Canva-Challenge";
+			path = "Target Support Files/Pods-Canva-Challenge";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				B3E440A8049F8812B19C493F058C3263 /* Pods */,
+				45CFBC5602C656D28EA69EAF530BBF83 /* Products */,
+				828BA1F9EAF185782E8C825171BAB444 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		828BA1F9EAF185782E8C825171BAB444 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C395F44C0F3B320D50734FD414FD503 /* Pods-Canva-Challenge */,
+				E5D7919AF5C7BFFAF146F344EAB7D710 /* Pods-Canva-ChallengeTests */,
+				BEAD8FD1DF571313D56185D757EF9238 /* Pods-Canva-ChallengeUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		85B470ABF4D5A7ECDFB3DCDDC5E5E304 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF752DC5463E51BDD77D8765B4682A2C /* Info.plist */,
+				8C727AB860B7D729365D58E214F1D518 /* KVNProgress.modulemap */,
+				DAED395B51F2FE7109C015C449074F2F /* KVNProgress.xcconfig */,
+				958E5E786A466507D3F3C466B72A7831 /* KVNProgress-dummy.m */,
+				B9B72ABC76916B8248918FCD8CB3E48A /* KVNProgress-prefix.pch */,
+				14D423D3A4EC0E2000C089B44FF79038 /* KVNProgress-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KVNProgress";
+			sourceTree = "<group>";
+		};
+		8FA57E1CE0ADC3CC344FF64A3F418AD8 /* HanekeSwift */ = {
+			isa = PBXGroup;
+			children = (
+				0BF536E54EB785B82DFE1384EE38E7BE /* Cache.swift */,
+				A04A6A4933DFA25878834B6EB53925D9 /* CGSize+Swift.swift */,
+				7C655AE519C12DA15AC5089960B604E2 /* CryptoSwiftMD5.swift */,
+				1BD47E501AB669159110A83F93D827DE /* Data.swift */,
+				3E62FAA62E8C97DA13F5564CBDAA3EF1 /* DiskCache.swift */,
+				54ABABF52D2F2414292C7C9F9A7F89AC /* DiskFetcher.swift */,
+				7E5F336C00592E59C8F14A08ED0D2F1E /* Fetch.swift */,
+				18FCFB0B635C29CCF6AE2B98ADF8EFF4 /* Fetcher.swift */,
+				BEE16DCF238504009105AC9414848FBB /* Format.swift */,
+				FD26BFB65C84E0923BA7AAB4F05BABC3 /* Haneke.swift */,
+				8FDB89B93C3088CF6D5111DE0076B755 /* Log.swift */,
+				8FB2E7B6972CA4CE451454EC5E00737F /* NetworkFetcher.swift */,
+				E514656B1E5676431073CD0D062F3B32 /* NSFileManager+Haneke.swift */,
+				58A03ABB2ECA6E63305B195EEEDE0DF0 /* NSHTTPURLResponse+Haneke.swift */,
+				CEA5EDF23A9EDD7FD02C6D3A1DA0CA6E /* NSURLResponse+Haneke.swift */,
+				DBD5AC01BAFEF1434DB3431617AD7A73 /* String+Haneke.swift */,
+				16B769203704FFACD430090222DC6971 /* UIButton+Haneke.swift */,
+				23D7F7C979C02D291C8DBC3B1999AC23 /* UIImage+Haneke.swift */,
+				9B8F2B40ED69D2ECB7919640637DDB01 /* UIImageView+Haneke.swift */,
+				E3B9811A02ED0C9A6A3DDBA26FACDD5D /* UIView+Haneke.swift */,
+				F291121C08709AF86B2CCFE09C4A2D6A /* Support Files */,
+			);
+			name = HanekeSwift;
+			path = HanekeSwift;
+			sourceTree = "<group>";
+		};
+		AF62A72BFFBB645BC76639BC1DEB7DB4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */,
+				21F97CDD09FA57FE7AA4A0C91DAC42EA /* GLKit.framework */,
+				52B38C833D724C92FE336D7150D1DAC3 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B3E440A8049F8812B19C493F058C3263 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FA57E1CE0ADC3CC344FF64A3F418AD8 /* HanekeSwift */,
+				017F597510368315863CE9D3B650225D /* KVNProgress */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BEAD8FD1DF571313D56185D757EF9238 /* Pods-Canva-ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				369B7CDED73ED74CF1ADB08582B737FC /* Info.plist */,
+				956EF190FADB27B73F6A6FA86D2528F3 /* Pods-Canva-ChallengeUITests.modulemap */,
+				BDBA836F97EE73336C5F67BCBDBE16E0 /* Pods-Canva-ChallengeUITests-acknowledgements.markdown */,
+				872C8BC77E113B1EABBD75A21F993DFC /* Pods-Canva-ChallengeUITests-acknowledgements.plist */,
+				611E5F23EC946AD8A08D14BABEDC9A42 /* Pods-Canva-ChallengeUITests-dummy.m */,
+				695028318FCDBB9951F82BECB9E443B6 /* Pods-Canva-ChallengeUITests-frameworks.sh */,
+				00A8400BC12FC2F78AFD7F8DD3092717 /* Pods-Canva-ChallengeUITests-resources.sh */,
+				ED3E3E9F1CF133B7FB27C003435C9311 /* Pods-Canva-ChallengeUITests-umbrella.h */,
+				56DCE1FB2951AB8ED555A6D2BEADD7F8 /* Pods-Canva-ChallengeUITests.debug.xcconfig */,
+				FC585410C4877FEEE2B8162B03089842 /* Pods-Canva-ChallengeUITests.release.xcconfig */,
+			);
+			name = "Pods-Canva-ChallengeUITests";
+			path = "Target Support Files/Pods-Canva-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		E5D7919AF5C7BFFAF146F344EAB7D710 /* Pods-Canva-ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AA52B25DB40F71622F9F0C244CDC5BB /* Info.plist */,
+				F4F94553446DC3353B90E529D7BC7982 /* Pods-Canva-ChallengeTests.modulemap */,
+				8F5B03156BB2A568EC5B97BCBF92903A /* Pods-Canva-ChallengeTests-acknowledgements.markdown */,
+				793E8A55D2BDCCD5E3F767206545BC0B /* Pods-Canva-ChallengeTests-acknowledgements.plist */,
+				A0969DF19DA214804E7B6360EEBB794A /* Pods-Canva-ChallengeTests-dummy.m */,
+				9FD9DAA37EC150D63862506A348F781C /* Pods-Canva-ChallengeTests-frameworks.sh */,
+				1BE32C42182725B2DBADB10360730CF0 /* Pods-Canva-ChallengeTests-resources.sh */,
+				04882940F42CE98B02C0088AB5A68084 /* Pods-Canva-ChallengeTests-umbrella.h */,
+				40E2EF66F06E5EA2611E90BFCD3359AA /* Pods-Canva-ChallengeTests.debug.xcconfig */,
+				502C8B0D563139FDC99DB87EB93ABB6F /* Pods-Canva-ChallengeTests.release.xcconfig */,
+			);
+			name = "Pods-Canva-ChallengeTests";
+			path = "Target Support Files/Pods-Canva-ChallengeTests";
+			sourceTree = "<group>";
+		};
+		F291121C08709AF86B2CCFE09C4A2D6A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4158036A6AC2318DB87AC5F28676656A /* HanekeSwift.modulemap */,
+				E7130BA1BFEC8F3A22B7CCD708409AC1 /* HanekeSwift.xcconfig */,
+				9EEDBBC8BE85DED2CE0502376D82FAF4 /* HanekeSwift-dummy.m */,
+				6CC81BDF8D141965C61CF9BBDA6ED794 /* HanekeSwift-prefix.pch */,
+				23E4433F5C3563A887BB5C9E2CDDBA76 /* HanekeSwift-umbrella.h */,
+				497D72655824099BB11F367E7FC08A7B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HanekeSwift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1230F5D0018AF9B0BFF25558571D1DB3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9C156883B938B995522ECC76E4A65DD /* HanekeSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62F5B971AC8516B6E09005015E41FEB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1B196C1FDE2A7D5ECC314CD998954E /* Pods-Canva-ChallengeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EFD8082C9812ADF8049A42902296C13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B211E4079D32A859EBE82470B96D28C /* Pods-Canva-ChallengeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB86CFF3FA52669892C0C4A0BB55FE13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2103757FE9BA3FEF83B88C3897D1605B /* Pods-Canva-Challenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4866DEA7924BE2515A9A8B745727BE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB07461A48A7A8DCDC654FB8BD8EC45A /* KVNProgress-umbrella.h in Headers */,
+				DC6457AF762D0DDF0C07EDD06FD84141 /* KVNProgress.h in Headers */,
+				AF1813E6ABD7EBF8D2361B9ACE72A894 /* KVNProgressConfiguration.h in Headers */,
+				D7DC140F63B94AE2752473BA5A1036B3 /* KVNRotationViewController.h in Headers */,
+				623E86F907ACAF05C7D5F437F5189F9B /* UIColor+KVNContrast.h in Headers */,
+				176989015A543276704F966B3FC0E67F /* UIImage+KVNEmpty.h in Headers */,
+				FD50B44A26DC8DFD895382DC0FB61AA9 /* UIImage+KVNImageEffects.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1CC71F9CD5545E32178492A81594B457 /* KVNProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2582C843A4A80BBDED4E4ED70076FB22 /* Build configuration list for PBXNativeTarget "KVNProgress" */;
+			buildPhases = (
+				DB83E44370D5C0E75315966FBCB55D9D /* Sources */,
+				485E10C678BCA805118F3F0FA0EBF124 /* Frameworks */,
+				D4866DEA7924BE2515A9A8B745727BE0 /* Headers */,
+				417095D5A748014A22D75C2D477BD42D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVNProgress;
+			productName = KVNProgress;
+			productReference = 08973B4E88E041F74D1A11C01E3AEAE1 /* KVNProgress.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		785DDDEF2A43DD566C52794A725BD9E0 /* Pods-Canva-Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C0620CC646DDB00E547AA43F351BAE /* Build configuration list for PBXNativeTarget "Pods-Canva-Challenge" */;
+			buildPhases = (
+				61977C388D6D443BD734A55810430C87 /* Sources */,
+				9638DCC291B17FC51CF359D4B27A7015 /* Frameworks */,
+				CB86CFF3FA52669892C0C4A0BB55FE13 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AB5EA9FA93BC144614E69FD97669725 /* PBXTargetDependency */,
+				C4204F9776D6B60C2D9650221BBAE31B /* PBXTargetDependency */,
+			);
+			name = "Pods-Canva-Challenge";
+			productName = "Pods-Canva-Challenge";
+			productReference = 6CE113366118E04E14CB5B8631B68928 /* Pods_Canva_Challenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93F66165042CEFBA1521D94282F2C32C /* Pods-Canva-ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF586220C47BAFE4EEC2832646318B45 /* Build configuration list for PBXNativeTarget "Pods-Canva-ChallengeUITests" */;
+			buildPhases = (
+				E420F5742DB566AE7037D824F9113366 /* Sources */,
+				7DBC390D4CA8A71B8B3F2F71F02B9C97 /* Frameworks */,
+				62F5B971AC8516B6E09005015E41FEB7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Canva-ChallengeUITests";
+			productName = "Pods-Canva-ChallengeUITests";
+			productReference = FC28979FB305A50CCC727B769704C902 /* Pods_Canva_ChallengeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE4759774042D8E013517E82C6F7A058 /* HanekeSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DD468FB375E9C1971E9F0CFE51A4135 /* Build configuration list for PBXNativeTarget "HanekeSwift" */;
+			buildPhases = (
+				3F39FB05072ED8C17BABEB9BC822959C /* Sources */,
+				A7AE8F3FCB72C7CD63ADDAF4C3227F08 /* Frameworks */,
+				1230F5D0018AF9B0BFF25558571D1DB3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HanekeSwift;
+			productName = HanekeSwift;
+			productReference = 875AAC996CD1F0C7E2AAA1A39CAF9C55 /* Haneke.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EA36D90392FC1C1DC2E5CF55EDB84E79 /* Pods-Canva-ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59AE87FC8658C10F9B16576D89C89E9D /* Build configuration list for PBXNativeTarget "Pods-Canva-ChallengeTests" */;
+			buildPhases = (
+				ED8B0C5E306A7ED8A99B0C1CC3328759 /* Sources */,
+				A6A80F6FF9D0DA26DE399DAD11B0AD88 /* Frameworks */,
+				8EFD8082C9812ADF8049A42902296C13 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Canva-ChallengeTests";
+			productName = "Pods-Canva-ChallengeTests";
+			productReference = 2041FF83656DACB42E2BFC8F43FFEA25 /* Pods_Canva_ChallengeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 45CFBC5602C656D28EA69EAF530BBF83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE4759774042D8E013517E82C6F7A058 /* HanekeSwift */,
+				1CC71F9CD5545E32178492A81594B457 /* KVNProgress */,
+				785DDDEF2A43DD566C52794A725BD9E0 /* Pods-Canva-Challenge */,
+				EA36D90392FC1C1DC2E5CF55EDB84E79 /* Pods-Canva-ChallengeTests */,
+				93F66165042CEFBA1521D94282F2C32C /* Pods-Canva-ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		417095D5A748014A22D75C2D477BD42D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4A6A8F4FD1C5562A564E0F79476870 /* KVNProgressView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F39FB05072ED8C17BABEB9BC822959C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D734F5980CF4609635307AEE7ECB65B2 /* Cache.swift in Sources */,
+				9D751AE797836951F9FD0A4E9E6AE344 /* CGSize+Swift.swift in Sources */,
+				6F41805C2984D3172CEBDCB232A9E205 /* CryptoSwiftMD5.swift in Sources */,
+				516B284EC38BCC14EBF5A275790CFA9E /* Data.swift in Sources */,
+				44ACFD0543993523C7B2875814A25A65 /* DiskCache.swift in Sources */,
+				233D0C74026D4F77CB562E90B2714777 /* DiskFetcher.swift in Sources */,
+				0DA289E3CFC0496E8A393A78831458C6 /* Fetch.swift in Sources */,
+				424F2EE8F3FF0206A8C0455939698D41 /* Fetcher.swift in Sources */,
+				F211DBF02AD9CCDECA9BD1C3F58CD42E /* Format.swift in Sources */,
+				7E867974234ECCA3F0419879A37EF9A1 /* Haneke.swift in Sources */,
+				34BA8F11703FC6F1FC94812A2B451A2D /* HanekeSwift-dummy.m in Sources */,
+				734D2D7728F4FDB196AFBDA6FE131376 /* Log.swift in Sources */,
+				45D941F68F765620760E8EC56F4C3904 /* NetworkFetcher.swift in Sources */,
+				C9FDF6F209E90829A8E96B03077116BB /* NSFileManager+Haneke.swift in Sources */,
+				5946A4834D77660F3D8188ED70FDC603 /* NSHTTPURLResponse+Haneke.swift in Sources */,
+				2D93F149491F25BCC11EBF259DE1791D /* NSURLResponse+Haneke.swift in Sources */,
+				25F558B3167CC7FAFCCC902B83ED0599 /* String+Haneke.swift in Sources */,
+				A257C7E3394A9813188DC886B978193F /* UIButton+Haneke.swift in Sources */,
+				048BE8B1399E22885B758F58B5103AAF /* UIImage+Haneke.swift in Sources */,
+				368FBAAE5E624FDDB6F39D1ACB1DA144 /* UIImageView+Haneke.swift in Sources */,
+				9F0ED20EDA02495C3CE53351168BDA34 /* UIView+Haneke.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61977C388D6D443BD734A55810430C87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834A6F9153967FAD2757C33ED34A291C /* Pods-Canva-Challenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB83E44370D5C0E75315966FBCB55D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7FAFE4E22D440B924E271ADFD180FC /* KVNProgress-dummy.m in Sources */,
+				A9D13F93EECB898FD9136234180D3875 /* KVNProgress.m in Sources */,
+				E446E59C1EB3112CB388D3DFAFE39E6A /* KVNProgressConfiguration.m in Sources */,
+				F0EBDEE66ECE575E113AC43F8CC67642 /* KVNRotationViewController.m in Sources */,
+				6F015CE6EB028FCAEC34271AB1417685 /* UIColor+KVNContrast.m in Sources */,
+				C5EA31C1EB80BB5C74E4A258F5A3E15F /* UIImage+KVNEmpty.m in Sources */,
+				912E9BC052D9ED36E9A586C2F9B1A954 /* UIImage+KVNImageEffects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E420F5742DB566AE7037D824F9113366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A629494D51BA1413529697B107DC0E3E /* Pods-Canva-ChallengeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8B0C5E306A7ED8A99B0C1CC3328759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEADB61E63EFE271357113BEA9EABDA /* Pods-Canva-ChallengeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AB5EA9FA93BC144614E69FD97669725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HanekeSwift;
+			target = AE4759774042D8E013517E82C6F7A058 /* HanekeSwift */;
+			targetProxy = 90636245E02F97F8F58FEBB11FE03101 /* PBXContainerItemProxy */;
+		};
+		C4204F9776D6B60C2D9650221BBAE31B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVNProgress;
+			target = 1CC71F9CD5545E32178492A81594B457 /* KVNProgress */;
+			targetProxy = 0FF3671440E1EC82D0BD2D78BF76FA20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00FC875A36084594448B12546B98857C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502C8B0D563139FDC99DB87EB93ABB6F /* Pods-Canva-ChallengeTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Canva-ChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Canva-ChallengeTests/Pods-Canva-ChallengeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Canva_ChallengeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0507A04505623CEF6B2A4A1BA0F9AA7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7130BA1BFEC8F3A22B7CCD708409AC1 /* HanekeSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HanekeSwift/HanekeSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HanekeSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HanekeSwift/HanekeSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Haneke;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1657AF88DF168FE0FAC163C82F4338D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAED395B51F2FE7109C015C449074F2F /* KVNProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KVNProgress/KVNProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVNProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KVNProgress/KVNProgress.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KVNProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		20248347024630ED21C9B91602CEA30B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E2EF66F06E5EA2611E90BFCD3359AA /* Pods-Canva-ChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Canva-ChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Canva-ChallengeTests/Pods-Canva-ChallengeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Canva_ChallengeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		28F07EE8D40670119A93EF75D9974FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC585410C4877FEEE2B8162B03089842 /* Pods-Canva-ChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Canva-ChallengeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Canva-ChallengeUITests/Pods-Canva-ChallengeUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Canva_ChallengeUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		317B9A260E3A60EDD86E64B2CCA7FDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56DCE1FB2951AB8ED555A6D2BEADD7F8 /* Pods-Canva-ChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Canva-ChallengeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Canva-ChallengeUITests/Pods-Canva-ChallengeUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Canva_ChallengeUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4C576A5FD19D392715246CDB148E43D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0727D014FDD135C95C93EA794E91F63 /* Pods-Canva-Challenge.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Canva-Challenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Canva-Challenge/Pods-Canva-Challenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Canva_Challenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4FC6121509F297AB0F82753C74EFF60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7130BA1BFEC8F3A22B7CCD708409AC1 /* HanekeSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HanekeSwift/HanekeSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HanekeSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HanekeSwift/HanekeSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Haneke;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB5593DBCA6913A7B4A95926EF45D9C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAED395B51F2FE7109C015C449074F2F /* KVNProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KVNProgress/KVNProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVNProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KVNProgress/KVNProgress.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KVNProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC9C2993701349791E27BCC19EFE6008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46107B61A502DD2746372D7805587AA /* Pods-Canva-Challenge.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Canva-Challenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Canva-Challenge/Pods-Canva-Challenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Canva_Challenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2582C843A4A80BBDED4E4ED70076FB22 /* Build configuration list for PBXNativeTarget "KVNProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1657AF88DF168FE0FAC163C82F4338D6 /* Debug */,
+				CB5593DBCA6913A7B4A95926EF45D9C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59AE87FC8658C10F9B16576D89C89E9D /* Build configuration list for PBXNativeTarget "Pods-Canva-ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20248347024630ED21C9B91602CEA30B /* Debug */,
+				00FC875A36084594448B12546B98857C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DD468FB375E9C1971E9F0CFE51A4135 /* Build configuration list for PBXNativeTarget "HanekeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0507A04505623CEF6B2A4A1BA0F9AA7B /* Debug */,
+				4FC6121509F297AB0F82753C74EFF60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5C0620CC646DDB00E547AA43F351BAE /* Build configuration list for PBXNativeTarget "Pods-Canva-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9C2993701349791E27BCC19EFE6008 /* Debug */,
+				4C576A5FD19D392715246CDB148E43D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF586220C47BAFE4EEC2832646318B45 /* Build configuration list for PBXNativeTarget "Pods-Canva-ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317B9A260E3A60EDD86E64B2CCA7FDCD /* Debug */,
+				28F07EE8D40670119A93EF75D9974FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
