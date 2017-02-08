@@ -33,7 +33,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="343"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MRc-5c-dXD">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="343"/>
+                                        <rect key="frame" x="10" y="10" width="323" height="323"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="NBn-A3-EHG">
                                             <size key="itemSize" width="50" height="50"/>
@@ -50,17 +50,17 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zNM-dL-ggq">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <rect key="frame" x="-1" y="-1" width="52" height="52"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         </imageView>
                                                     </subviews>
                                                 </view>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="zNM-dL-ggq" firstAttribute="leading" secondItem="Dqf-0f-z73" secondAttribute="leading" id="4bl-C8-m9S"/>
-                                                    <constraint firstAttribute="bottom" secondItem="zNM-dL-ggq" secondAttribute="bottom" id="Ala-EH-Lxz"/>
-                                                    <constraint firstItem="zNM-dL-ggq" firstAttribute="top" secondItem="Dqf-0f-z73" secondAttribute="top" id="Y8Y-fT-DYd"/>
-                                                    <constraint firstAttribute="trailing" secondItem="zNM-dL-ggq" secondAttribute="trailing" id="p0M-gP-dwC"/>
+                                                    <constraint firstItem="zNM-dL-ggq" firstAttribute="leading" secondItem="Dqf-0f-z73" secondAttribute="leading" constant="-1" id="4bl-C8-m9S"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zNM-dL-ggq" secondAttribute="bottom" constant="-1" id="Ala-EH-Lxz"/>
+                                                    <constraint firstItem="zNM-dL-ggq" firstAttribute="top" secondItem="Dqf-0f-z73" secondAttribute="top" constant="-1" id="Y8Y-fT-DYd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zNM-dL-ggq" secondAttribute="trailing" constant="-1" id="p0M-gP-dwC"/>
                                                 </constraints>
                                                 <connections>
                                                     <outlet property="mazeImage" destination="zNM-dL-ggq" id="402-yo-PWB"/>
@@ -71,15 +71,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="MRc-5c-dXD" firstAttribute="top" secondItem="5m8-yR-VaK" secondAttribute="top" id="7OJ-r1-r4f"/>
+                                    <constraint firstItem="MRc-5c-dXD" firstAttribute="top" secondItem="5m8-yR-VaK" secondAttribute="top" constant="10" id="7OJ-r1-r4f"/>
                                     <constraint firstItem="dLU-SJ-HYS" firstAttribute="leading" secondItem="5m8-yR-VaK" secondAttribute="leading" id="Qiw-PD-X8n"/>
-                                    <constraint firstItem="MRc-5c-dXD" firstAttribute="leading" secondItem="5m8-yR-VaK" secondAttribute="leading" id="e9g-3b-jKx"/>
+                                    <constraint firstItem="MRc-5c-dXD" firstAttribute="leading" secondItem="5m8-yR-VaK" secondAttribute="leading" constant="10" id="e9g-3b-jKx"/>
                                     <constraint firstItem="dLU-SJ-HYS" firstAttribute="top" secondItem="5m8-yR-VaK" secondAttribute="top" id="eRl-PC-2ew"/>
                                     <constraint firstAttribute="trailing" secondItem="dLU-SJ-HYS" secondAttribute="trailing" id="h9F-G8-RNZ"/>
                                     <constraint firstAttribute="bottom" secondItem="dLU-SJ-HYS" secondAttribute="bottom" id="jcV-zQ-Ktg"/>
-                                    <constraint firstAttribute="trailing" secondItem="MRc-5c-dXD" secondAttribute="trailing" id="m38-4Y-ZkC"/>
+                                    <constraint firstAttribute="trailing" secondItem="MRc-5c-dXD" secondAttribute="trailing" constant="10" id="m38-4Y-ZkC"/>
                                     <constraint firstAttribute="width" secondItem="5m8-yR-VaK" secondAttribute="height" multiplier="1:1" id="qbw-6R-5W6"/>
-                                    <constraint firstAttribute="bottom" secondItem="MRc-5c-dXD" secondAttribute="bottom" id="vxY-VC-ff7"/>
+                                    <constraint firstAttribute="bottom" secondItem="MRc-5c-dXD" secondAttribute="bottom" constant="10" id="vxY-VC-ff7"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9vh-tr-rak">

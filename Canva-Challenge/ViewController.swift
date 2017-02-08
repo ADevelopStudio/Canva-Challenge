@@ -21,11 +21,17 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return  matrix[section].count
     }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let numberOfElements = CGFloat(matrix.count > 0 ? matrix.first!.count : 1)
-        return CGSize(width: collection.bounds.width/numberOfElements, height: collection.bounds.width/numberOfElements)
+        return CGSize(width: collectionView.bounds.width / CGFloat(matrix[indexPath.section].count), height: collectionView.bounds.width / CGFloat(matrix.count))
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
+    
+
 }
 
 class ViewController: UIViewController {
@@ -40,7 +46,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         collection.delegate = self
         collection.dataSource = self
-        generateEmptyArray()
     }
     
     
@@ -117,7 +122,9 @@ class ViewController: UIViewController {
             print("All rooms were open in total time: \(Date().timeIntervalSince1970 - startTime) sec")
             matrix =  matrix.cutEmptyData()
             matrix.debugPrint()
-            collection.reloadData()
+            DispatchQueue.main.async(){
+                self.collection.reloadData()
+            }
         }
     }
     
