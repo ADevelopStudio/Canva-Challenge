@@ -25,8 +25,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionWidth = UIScreen.main.bounds.width - 56
         let width = collectionWidth / CGFloat(self.matrix[indexPath.section].count)
-        let height = collectionWidth / CGFloat(self.matrix.count)
-        return CGSize(width: width, height: height)
+//        to scale maze on collection view
+//        let height = collectionWidth / CGFloat(self.matrix.count)
+        return CGSize(width: width, height: width)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -39,7 +40,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: 0, height: 0)
     }
-    
 
 }
 
@@ -64,29 +64,28 @@ class ViewController: UIViewController {
     
     
     
-    func generateEmptyArray(size: Int)  {
-        matrix = []
-        roomsToDownload = []
+    func generateEmptyArray(size: Int) -> [[MazeCellData?]]  {
+        var newMatrix = [[MazeCellData?]]()
         for _ in 0..<size {
             var arrayRow = [MazeCellData?]()
             for _ in 0..<size {
                 arrayRow.append(nil)
             }
-            matrix.append(arrayRow)
+            newMatrix.append(arrayRow)
         }
+        return newMatrix
     }
     
     
     @IBAction func genaratePressed(_ sender: Any) {
         if isGeneratingInProgress {
-            let sheet = UIAlertController(title: "Maze generation in progress.", message: "Do you want to stop it?", preferredStyle: .alert)
+            let sheet = UIAlertController(title: "Maze generating in progress.", message: "Do you want to stop it?", preferredStyle: .alert)
             sheet.addAction(UIAlertAction(title: "Stop", style: .destructive, handler: { _ in
                 self.generatingIndicator.isHidden = true
                 self.isGeneratingInProgress = false
             }))
             sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             self.present(sheet, animated: true, completion: nil)
-            
         } else {
             startGeneratingMaze()
         }
@@ -96,7 +95,8 @@ class ViewController: UIViewController {
     func startGeneratingMaze() {
         isGeneratingInProgress = true
         generatingIndicator.isHidden = false
-        generateEmptyArray(size: 500)
+        roomsToDownload = []
+        matrix = generateEmptyArray(size: 500)
         collection.isHidden = true
         startTime = Date().timeIntervalSince1970
         openFirstRoom(completion: {
@@ -105,7 +105,7 @@ class ViewController: UIViewController {
                 self.roomsToDownload.append(RoomToDownload(id: roomId, positionX: 250, positionY: 250, needToUnlock: false))
                 self.openNextRoom()
             } else {
-                print("Something went wrong")
+                KVNProgress.showError(withStatus: "Something went wrong")
             }
         })
     }
@@ -116,6 +116,7 @@ class ViewController: UIViewController {
             result in
             if result.1 != nil {
                 print("Some error is here 0")
+                print(result.1!)
                 completion(false, "")
                 return
             }
@@ -134,6 +135,12 @@ class ViewController: UIViewController {
     
     
     func openARoom(room: RoomToDownload)  {
+        if room.positionX < 0 || room.positionY < 0 || room.positionX > matrix.count - 1 || room.positionY > matrix.count - 1 {
+            //THE ROOM IS OUT OF MATRIX RANGE
+            isGeneratingInProgress = false
+            openNextRoom()
+            return
+        }
         if matrix[room.positionX][room.positionY] != nil {
             openNextRoom()
             return
@@ -149,11 +156,10 @@ class ViewController: UIViewController {
     func openNextRoom() {
         if !self.isGeneratingInProgress { //WAS Stoped by user
             DispatchQueue.main.async(){
-                KVNProgress.showError(withStatus: "Canceled")
+                KVNProgress.showError(withStatus: "Stoped")
             }
             return
         }
-//        print("NEXT room!")
         if self.roomsToDownload.count > 0 {
             let newRoom = self.roomsToDownload.remove(at: 0)
             openARoom(room: newRoom)
@@ -166,6 +172,7 @@ class ViewController: UIViewController {
                 KVNProgress.showSuccess(withStatus: "All rooms were open in total time: \(Int(Date().timeIntervalSince1970 - self.startTime)) sec")
                 self.generatingIndicator.isHidden = true
                 self.collection.isHidden = false
+                self.collection.isScrollEnabled = self.matrix.count > 0 && self.matrix.count > self.matrix.first!.count
                 self.collection.reloadData()
             }
         }
@@ -187,14 +194,11 @@ class ViewController: UIViewController {
             result in
             if result.1 != nil {
                 print("Some error is here 1")
+                print(result.1!)
                 return
             }
-//            print("HERE is the room")
             if result.0 != nil {
                 let json = JSON(data: result.0!)
-//                print(json)
-//                print(json["tileUrl"].stringValue)
-
                 if json["rooms"]["east"]["room"].stringValue.length > 0 {
                     self.roomsToDownload.append(RoomToDownload(id: json["rooms"]["east"]["room"].stringValue, positionX: room.positionX, positionY: room.positionY + 1, needToUnlock: false))
                 } else if json["rooms"]["east"]["lock"].stringValue.length > 0 {

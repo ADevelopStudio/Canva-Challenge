@@ -25,7 +25,7 @@ extension Sequence where Iterator.Element == Array<MazeCellData?> {
     func cutEmptyData() -> [[MazeCellData?]] {
         if let datArray = self as? [[MazeCellData?]]{
             var sortedMatrix = [[MazeCellData?]]()
-            //Find total number elements in one row and first element to cut all empty data
+            //Find total number elements in one row and first element in row to cut all empty data
             var maxElements = 0
             var firstElement = datArray.count
             
@@ -46,7 +46,7 @@ extension Sequence where Iterator.Element == Array<MazeCellData?> {
                 }
             }
             //Cutting array from unnecessary nil data
-            for row in 0..<datArray.count where  datArray[row].flatMap({$0}).count > 0  {
+            for row in 0..<datArray.count where  datArray[row].flatMap({$0}).count > 1  {
                 sortedMatrix.append(Array(datArray[row][(firstElement + 1)...(firstElement + maxElements)]))
             }
             return sortedMatrix

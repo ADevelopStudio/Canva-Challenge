@@ -28,9 +28,44 @@ class Canva_ChallengeUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testLeftEmptyBtnPressed() {
+        XCUIApplication().buttons["Lorem"].tap()
     }
     
+    func testRightEmptyBtnPressed() {
+        XCUIApplication().buttons["Ipsum"].tap()
+    }
+    
+    func testUIElements(){
+        let app = XCUIApplication()
+        XCTAssertTrue(app.buttons.count == 3, "Buttons on screen count: \(app.buttons.count)")
+        XCTAssertTrue(app.collectionViews.count == 1, "Collections on screen count: \(app.collectionViews.count)")
+        XCTAssertTrue(app.collectionViews.element(boundBy: 0).cells.count == 0)
+    }
+    
+    func testCancelAlert() {
+        let app = XCUIApplication()
+        let generateButton = app.buttons["Generate"]
+        generateButton.tap()
+        XCTAssertTrue(app.alerts.count == 0)
+        generateButton.tap()
+        sleep(1)
+        XCTAssertTrue(app.alerts.count == 1)
+        app.alerts["Maze generating in progress."].buttons["Cancel"].press(forDuration: 0.6);
+        XCTAssertTrue(app.alerts.count == 0)
+    }
+    
+    
+    func testStopMazeGeneration() {
+        let app = XCUIApplication()
+        let generateButton = app.buttons["Generate"]
+        generateButton.tap()
+        XCTAssertTrue(app.alerts.count == 0)
+        generateButton.tap()
+        sleep(1)
+        XCTAssertTrue(app.alerts.count == 1)
+        app.alerts["Maze generating in progress."].buttons["Stop"].press(forDuration: 0.6);
+        XCTAssertTrue(app.alerts.count == 0)
+
+    }
 }
