@@ -193,9 +193,10 @@ class ViewController: UIViewController {
         mazeManager.fetchRoom(withIdentifier: room.id, callback: {
             result in
             if result.1 != nil {
-                print("Some error is here 1")
+                self.isGeneratingInProgress = false
+                //ERROR LOADING ROOM ? need to investigate
+                print("ERROR LOADING ROOM ? need to investigate tag: 1")
                 print(result.1!)
-                return
             }
             if result.0 != nil {
                 let json = JSON(data: result.0!)
@@ -234,6 +235,10 @@ class ViewController: UIViewController {
                     self.matrix[room.positionX - 1][room.positionY] =  MazeCellData()
                 }
                 self.matrix[room.positionX][room.positionY] =  MazeCellData(id: json["id"].stringValue, image: json["tileUrl"].stringValue)
+            } else {
+                //ERROR LOADING ROOM ? need to investigate
+                print("ERROR LOADING ROOM ? need to investigate tag: 2")
+                self.isGeneratingInProgress = false
             }
             self.openNextRoom()
         })

@@ -36,7 +36,6 @@ class ViewControllerTests: XCTestCase {
         array.append(Array(arrayLiteral: nil, nil, nil, nil))
 
         XCTAssertTrue(array.cutEmptyData().count == 3, "Matrix array after cutting nils count = \(array.cutEmptyData().count)")
-
     }
 
     
